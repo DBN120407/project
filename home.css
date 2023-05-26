@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50% ,  rgba(0,0,0,0.5)50%), url(../asset/bg.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    position: absolute;
+    width: 1365px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #B7B7B7;
+    background: linear-gradient(to right, #00f2ff, #ffdd00)
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.menu{
+    width: 300px;
+    float: left;
+    height: 40px;
+
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 9px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+/* mengedit tulisan pada navbar*/
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+ul li a:hover{
+    color: #ff7200; 
+    border-bottom: 5px solid #ff7200;
+}
+
+.form input:focus{
+    outline: none;
+}
+h1 {
+    position: absolute;
+    width: 424px;
+    height: 72px;
+    left: 495px;
+    top: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-style: normal;
+    font-size: 60px;
+    color: #e1ff00;
+}
+h2 {
+    position: absolute;
+    width: 524px;
+    height: 60px;
+    left: 435px;
+    top: 170px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    color: #FF5C00;
+}
+/* Ellipse 1 */
+.Mobil {
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    left: 110px;
+    top: 10px;
+    bottom: 200px;
+    border-radius: 100%;
+    z-index: 15;
+}
+img {
+    position: absolute;
+    width: 455px;
+    height: 250px;
+    left: 460px;
+    top: 250px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 77px;
+    color: #FFFFFF;
+}
+p {
+    position: absolute;
+    width: 520px;
+    height: 55px;
+    left: 445px;
+    top: 500px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 50px;
+    line-height: 77px;
+    color: whitesmoke;
+}

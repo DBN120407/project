@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=image.png, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+      <img class="Mobil" src="../asset/images-removebg-preview.png" alt="Logo"> 
+     <div class="main">
+        <div class="navbar">
+            <div class="icon">
+            </div>
+            <img src="../asset/NEWS 7 NOVEMBER - LAUNCHING GR SUPRA GT4 EVO 1.jpg" alt="SUPRA">
+
+            <!-- membuat navigasi -->
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="view.html">VIEW</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><div class="clock"></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>SELAMAT DATANG</h1><br><h2>DI WEBSITE TOYOTA SUPRA</h2><br>
+            <p>GR SUPRA GT4 EVO 1</p>
+        </div>
+    </div>
+    <script>
+        // membuat jam untuk HTML
+        function currentTime(){
+            // mendeklarasikan beberapa variabel untuk jam
+            let date = new Date();
+            let hh = date.getHours();
+            let mm = date.getMinutes();
+            let ss = date.getSeconds();
+            let session = "AM";
+
+            // jika hh sama dengan 0, nilai hh akan diubah menjadi 12
+            if(hh == 0){
+                hh = 12;
+            }
+
+            // jika hh lebih dari 12 maka nilai hh saat ini akan dikurangi 12, misal jam 13 AM akan dikurangi 12, jadi jam 1 siang
+            if(hh > 12){
+                hh = hh - 12;
+                session = "PM";
+            }
+
+            // jika nilai jam lebih rendah dari 10, 0 akan ditambahkan sebelum nilai/digit
+            hh = (hh < 10) ? "0" + hh : hh;
+            mm = (mm < 10) ? "0" + mm : mm;
+            ss = (ss < 10) ? "0" + ss : ss;
+
+            // mendeklarasikan variabel waktu baru yang berisi semua perhitungan yang telah dilakukan
+            let time = hh + ":" + mm + ":" + ss + ":" + session;
+
+            // mencetak hasilnya ke HTML
+            document.getElementsByClassName("clock")[0].innerText = time;
+            
+            // membuat metode untuk terus memperbarui jam dengan 1 detik
+            let t = setTimeout(function(){currentTime()}, 1000);
+        }
+
+        //  memanggil fungsi jam
+        currentTime();
+    </script>
+    </header>
+</body>
+</html>

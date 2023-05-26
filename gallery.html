@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <img class="Mobil" src="../asset/images-removebg-preview.png" alt="Logo"> 
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+            </div>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="view.html">VIEW</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><div class="clock"></div></li>
+                </ul>
+            </div>
+                <img class="Supra" src="../asset/supra-lelang-fnf.jpg" alt="Fast & Furious"> <br>
+                <h1>Mengenai Toyota Supra MK4
+                    Generasi pertama dari Toyota Supra hadir pada tahun 1978 dengan nama Toyota Celica Supra atau Celica XX di Jepang. Supra generasi pertama dibekali dengan mesin 6 silinder berkapasitas 2.800 cc yang mampu menghasilkan tenaga sebesar 116 dk dengan torsi 196 Nm.
+                    Toyota terus melakukan pengembangan Toyota Supra hingga generasi keempat hadir. Supra MK4 pertama kali diperkenalkan pada tahun 1993 dengan kode A80. Mobil ini memiliki desain yang aerodinamis dengan bentuk lampu yang sedikit membulat. Supra MK4 memiliki panjang 4.514 mm, lebar 1.811 mm, tinggi 1.275 mm, dan panjang wheel base 2.550 mm. Selain coupe, mobil ini juga hadir dalam versi targa.
+                    Tidak hanya tampilan, mobil ini juga memiliki interior yang sporty. Toyota memberikan tiga pilihan material untuk jok, yaitu fabric, recaro, dan full leather. Interior hanya tersedia dalam pilihan warna hitam.
+                    Generasi keempat dari Toyota Supra sudah dilengkapi dengan Suspensi depan dan belakang wishbones, coils, dan anti roll bars, steering rack dan pinion. Supra generasi keempat juga memiliki fitur modern pada masanya, yaitu traction control. </h1>
+                <img class="SupraA70" src="../asset/Hasegawa-1-24-Scale-Toyota-Supra-A70-3-0gt-Turbo-Limited-Plastic-Model-Kit-Japan-Figure-4967834211407-0.jpg" alt="Supra A70"> <br>
+                <h2>Banyak penggemar mobil dunia menyukai Toyota Supra A80 generasi keempat. Bahkan setelah tiga tahun hadirnya Toyota Supra A90.
+                    Sementara itu, Toyota Supra A70 generasi ketiga seolah tenggelam dalam bayang-bayang dan bahkan, barangkali, nyaris dilupakan.
+                    Namun, mungkin rendering ini dapat membantu mengingatkan kembali mobil legenda itu.
+                    Kami menemukan akun Instagram Hakosan Designs yang menghadirkan mobil tersebut dalam wujud lain yang terasa menyegarkan pandangan mata.
+                    Mobil ini langsung dikenali sebagai A70 berkat kap-nya yang panjang dan rata, lampu depan pop-up, dan bentuk fastback yang sederhana.
+                    Peningkatan fiksi ini membulatkan beberapa tepi sambil menghormati bentuk baji klasik, serta menjaganya agar tetap rendah dan lebar.</h2>
+                <img class="Modifikasi" src="../asset/toyota-sema-2020-new-cars-27-1024x683.jpg" alt="SEMA"> <br>
+                <h3>Supra merupakan legenda sports car sejak kali pertama diperkenalkan sebagai bagian dari Toyota Celica, bernama Toyota Celica Supra. Popularitasnya meningkat di pasar Eropa dengan kehadiran Mk2 Celica XX. Dibuktikan dengan memenangkan kompetisi US Grand Prix 1979.
+                    Baru akhirnya Toyota menghadirkan Supra sebagai model yang berdiri sendiri. Berbeda dengan Celica, Supra mendapatkan penggerak roda belakang dan dikembangkan dengan pilihan bodi Tourer. Supra Mk3 dirilis di pasar Amerika dan Jepang.
+                    Review Toyota Supra GR 2020: Kembalinya Sang Sports Car Legendaris 02
+                    Pesaingnya mulai berdatangan seperti Mazda RX-7, Honda NSX, bahkan Nissan 300ZX. Generasi keempat meluncur tahun 1993. Isao Tsuzuki selaku Guidance of Chief Engineer menegaskan filosofi ‘less is more’. Bodinya dibuat lebih ringan 100 kg dan aerodinamika ditingkatkan.
+                    Hasilnya, Mk4 memenangkan berbagai. Penghargaan seperti Pikes Peak, Le Mans 24 Hours, hingga All-Japan GT Championship (JGTC) dari tahun 1995 hingga 2003. Sayangnya, karena tidak bisa memenuhi target emisi gas buang yang ditetapkan, Supra berhenti diproduksi sejak 2002.
+                    Review Toyota Supra GR 2020: Kembalinya Sang Sports Car Legendaris 03</h3>
+              </div>
+
+
+            <script>
+                // membuat jam untuk HTML
+                function currentTime(){
+                    // mendeklarasikan beberapa variabel untuk jam
+                    let date = new Date();
+                    let hh = date.getHours();
+                    let mm = date.getMinutes();
+                    let ss = date.getSeconds();
+                    let session = "AM";
+        
+                    // jika hh sama dengan 0, nilai hh akan diubah menjadi 12
+                    if(hh == 0){
+                        hh = 12;
+                    }
+        
+                    // jika hh lebih dari 12 maka nilai hh saat ini akan dikurangi 12, misal jam 13 AM akan dikurangi 12, jadi jam 1 siang
+                    if(hh > 12){
+                        hh = hh - 12;
+                        session = "PM";
+                    }
+        
+                    // jika nilai jam lebih rendah dari 10, 0 akan ditambahkan sebelum nilai/digit
+                    hh = (hh < 10) ? "0" + hh : hh;
+                    mm = (mm < 10) ? "0" + mm : mm;
+                    ss = (ss < 10) ? "0" + ss : ss;
+        
+                    // mendeklarasikan variabel waktu baru yang berisi semua perhitungan yang telah dilakukan
+                    let time = hh + ":" + mm + ":" + ss + ":" + session;
+        
+                    // mencetak hasilnya ke HTML
+                    document.getElementsByClassName("clock")[0].innerText = time;
+                    
+                    // membuat metode untuk terus memperbarui jam dengan 1 detik
+                    let t = setTimeout(function(){currentTime()}, 1000);
+                }
+        
+                //  memanggil fungsi jam
+                currentTime();
+            </script>
+</body>
+</html>

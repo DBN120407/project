@@ -1,0 +1,100 @@
+body {
+    background-color: #808080;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 130px;
+    margin-top: 9px;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    display: inline-block;
+}
+
+/* mengedit tulisan pada navbar*/
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+ul li a:hover{
+    color: #ff7200; 
+    border-bottom: 5px solid #ff7200;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    position: absolute;
+    width: 1365px;
+    height: 75px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(to right, #00f2ff, #ffdd00)
+} 
+.Mobil {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 80px;
+    top: 10px;
+    bottom: 200px;
+    border-radius: 100%;
+    z-index: 15;
+}
+.Supra {
+    width: 210px;
+    height: 150px;
+    margin-left: 70px;
+    margin-top: 80px;
+    font-size: 70px;
+}
+h1 {
+    font-size: 15px;
+    margin-left: 300px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, #ff7200, #00ff33);
+    text-align: center;
+}
+.SupraA70 {
+    width: 210px;
+    height: 150px;
+    margin-left: 70px;
+    margin-top: -10px;
+    font-size: 70px;
+}
+h2 {
+    font-size: 15px;
+    margin-left: 300px;
+    margin-top: -150px;
+    margin-bottom: 90px;
+    background: linear-gradient(to right, #ffdd00, #ff7200);
+}
+.Modifikasi {
+    width: 210px;
+    height: 150px;
+    margin-left: 70px;
+    margin-top: -10px;
+    font-size: 70px;
+}
+h3 {
+    font-size: 15px;
+    margin-left: 300px;
+    margin-top: -150px;
+    margin-bottom: 90px;
+    background: linear-gradient(to right, #ff0000, #9900ff);
+    color: whitesmoke;
+}

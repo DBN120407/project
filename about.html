@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <img class="Mobil" src="../asset/images-removebg-preview.png" alt="Logo"> 
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+            </div>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="view.html">VIEW</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><div class="clock"></div></li>
+                </ul>
+            </div>
+            <script>
+                // membuat jam untuk HTML
+                function currentTime(){
+                    // mendeklarasikan beberapa variabel untuk jam
+                    let date = new Date();
+                    let hh = date.getHours();
+                    let mm = date.getMinutes();
+                    let ss = date.getSeconds();
+                    let session = "AM";
+        
+                    // jika hh sama dengan 0, nilai hh akan diubah menjadi 12
+                    if(hh == 0){
+                        hh = 12;
+                    }
+        
+                    // jika hh lebih dari 12 maka nilai hh saat ini akan dikurangi 12, misal jam 13 AM akan dikurangi 12, jadi jam 1 siang
+                    if(hh > 12){
+                        hh = hh - 12;
+                        session = "PM";
+                    }
+        
+                    // jika nilai jam lebih rendah dari 10, 0 akan ditambahkan sebelum nilai/digit
+                    hh = (hh < 10) ? "0" + hh : hh;
+                    mm = (mm < 10) ? "0" + mm : mm;
+                    ss = (ss < 10) ? "0" + ss : ss;
+        
+                    // mendeklarasikan variabel waktu baru yang berisi semua perhitungan yang telah dilakukan
+                    let time = hh + ":" + mm + ":" + ss + ":" + session;
+        
+                    // mencetak hasilnya ke HTML
+                    document.getElementsByClassName("clock")[0].innerText = time;
+                    
+                    // membuat metode untuk terus memperbarui jam dengan 1 detik
+                    let t = setTimeout(function(){currentTime()}, 1000);
+                }
+        
+                //  memanggil fungsi jam
+                currentTime();
+            </script>
+<header>
+    <h1>Tentang Kami</h1>
+</header>
+<main>
+    <h2>Sejarah</h2>
+    <p>Toyota Supra merupakan salah satu sport car populer dan banyak diminati. Jika berbicara mengenai sejarah Toyota Supra ini, pastinya beberapa dari Carmudian teringat dengan Toyota 2000GT yang diluncurkan pada 1967 silam dan muncul di film James Bond berjudul “You Only Live Twice”
+        Hadir pertama kali di tahun 1970-an, kesuksesan Toyota Supra tak lepas dari peran Toyota Celica, di mana Supra mengandalkan basis dari Celica Liftback. Toyota Supra memang mempunyai sejarah yang panjang dan penggemarnya terbilang tidak sedikit hingga kini. Desain mobil ini sangat sporty dan stylish, serta dibenamkan mesin dengan performa yang ganas.
+        Selain itu, Toyota Supra ini juga dinilai mudah dimodifikasi, sehingga ada banyak pecinta modifikasi yang menginginkan mobil tersebut.
+        </p>
+
+    <footer>
+        <h2>Referensi</h2>
+        <p>Toyota Celica Parts Catalogue 1977-1981. Toyota. McEachern, Sam (20 Maret 2018). "Toyota Supra to be Built by Magna Steyr in Austria". AutoGuide. Canada. Diakses tanggal 22 Januari 2019.Toyota (14 Januari 2019). Toyota Premieres New Supra at Detroit Auto Show. Siaran pers. Perez, Jeff (14 Januari 2019). "2020 Toyota Supra Debuts With 335 HP After A Decade Of Foreplay". Motor 1. US. Diakses tanggal 16 Januari 2019. Lee, Jonathan (15 Januari 2019). "Toyota GR Supra revealed – first global Gazoo Racing model, 340 PS 3.0L straight-six priced from RM205k". paultan.org. Malaysia. Diakses tanggal 16 Januari 2019. Anderson, Brad (14 Januari 2019). "2020 Toyota Supra Launch Edition Is Exclusive To 1500 U.S. Buyers, Costs $55,250". Carscoops. US. Diakses tanggal 16 Januari 2019. Huffman, John Pearley (14 Januari 2019). "The 2020 Toyota Supra Is a Resurrection of a Hero". Car and Driver. US. Diakses tanggal 16 Januari 2019. Stevens, Mike (14 Januari 2019). "2020 Toyota Supra Unveiled: Japan's Latest Hero Goes Official at Last". CarAdvice. Australia. Diakses tanggal 16 Januari 2019. Walton, Chris (14 Januari 2019). "Supra Returns! The Inside Story on the 2020 Toyota Supra's Comeback". Motor Trend. US. Diakses tanggal 16 Januari 2019. </p>
+    </footer>
+    <h2>Kontak</h2>
+    <p>EMAIL: customer-care@toyota.astra.co.id</p>
+    <p>NO TELEPHONE: 1500 315.</p>
+    <p>© 2023 Contoh Web. All rights reserved.</p>
+</main>
+</body>
+</html>
